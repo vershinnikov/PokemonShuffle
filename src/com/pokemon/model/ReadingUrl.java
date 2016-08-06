@@ -133,7 +133,9 @@ public class ReadingUrl {
     }
 
     String readUrl(String urlStr) throws Exception {
+
         URL url = new URL(urlStr);
+        url = new URL(urlStr);
         BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
         StringBuffer sb = new StringBuffer();
         String inputLine;
